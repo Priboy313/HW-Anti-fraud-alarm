@@ -39,7 +39,7 @@ public class AlarmSystem : MonoBehaviour
         {
             if (_alarmSource.volume < _volumeMax)
             {
-                _alarmSource.volume += _volumeChangingSpeed * Time.fixedDeltaTime;
+                _alarmSource.volume = Mathf.MoveTowards(_alarmSource.volume, _volumeMax, _volumeChangingSpeed * Time.fixedDeltaTime);
             }
         }
     }
@@ -58,7 +58,7 @@ public class AlarmSystem : MonoBehaviour
 
         while (_alarmSource.volume > _volumeMin)
         {
-            _alarmSource.volume -= _volumeChangingSpeed * Time.fixedDeltaTime;
+            _alarmSource.volume = Mathf.MoveTowards(_alarmSource.volume, _volumeMin, _volumeChangingSpeed * Time.fixedDeltaTime);
 
             yield return wait;
         }
