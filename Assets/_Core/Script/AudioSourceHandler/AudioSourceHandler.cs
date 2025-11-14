@@ -18,7 +18,7 @@ public class AudioSourceHandler : MonoBehaviour
 
         if (_audioSource.isPlaying == false)
         {
-        _audioSource.Play();
+            _audioSource.Play();
         }
 
         StartCoroutine(ChangeVolume(speed, targetVolume));
