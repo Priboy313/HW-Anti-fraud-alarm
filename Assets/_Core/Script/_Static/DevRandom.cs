@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-static class DevUtils
+static class DevRandom
 {
     private static float s_chanceMax = 100f;
 
@@ -34,7 +34,7 @@ static class DevUtils
         );
     }
 
-    public static Vector3 GetRandomDirection2D()
+    public static Vector3 GetRandomVector3OnPlane()
     {
         Vector2 randomCircle = UnityEngine.Random.insideUnitCircle.normalized;
 
