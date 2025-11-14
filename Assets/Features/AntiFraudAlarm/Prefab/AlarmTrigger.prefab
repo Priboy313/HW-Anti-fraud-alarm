@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4120880821398992507}
   - component: {fileID: 989869990271480611}
-  - component: {fileID: -1092996308560991365}
+  - component: {fileID: 5013078377660287766}
   m_Layer: 0
   m_Name: AlarmTrigger
   m_TagString: Untagged
@@ -52,9 +52,9 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-1092996308560991365
+  m_Size: {x: 7.9585614, y: 0.664449, z: 4.7210875}
+  m_Center: {x: -1.0904253, y: -0.16777551, z: 1.8605433}
+--- !u!114 &5013078377660287766
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,10 +63,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6870357257599725304}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46341a5ad5a340e4e9b33a3a3e1dbf43, type: 3}
+  m_Script: {fileID: 11500000, guid: e4301019e79c2c94795bd75c44dcbe49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _alarmSource: {fileID: 0}
-  _volumeMax: 1
-  _volumeMin: 0
-  _volumeChangingSpeed: 0.2
